@@ -1,9 +1,15 @@
 package com.example.studiestutorials04amigosproject.student;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import java.time.LocalDate;
 
+@Entity
+@Table
 public class Student {
 
+    @Id
     private long id;
     private String name;
     private String email;
