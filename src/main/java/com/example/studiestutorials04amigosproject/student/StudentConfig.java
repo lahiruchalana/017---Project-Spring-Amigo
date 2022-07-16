@@ -18,16 +18,17 @@ public class StudentConfig {
                     "lahiru",
                     "lahiru@mail.com",
                     LocalDate.of(1999, Month.JANUARY, 18),
-                    21
+                    23
             );
 
             Student kasun = new Student(
                     "kasun",
                     "kasun@mail.com",
                     LocalDate.of(1989, Month.FEBRUARY, 18),
-                    21
+                    33
             );
 
+            // using StudentRepository (JPARepository functions)
             repository.saveAll(
                     List.of(lahiru, kasun)
             );

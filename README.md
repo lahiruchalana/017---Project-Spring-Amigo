@@ -26,3 +26,6 @@ model -> api(controller) -> Service -> Repository(database)
 4. Service
 5. Repository(Interface)
 6. Configuration
+
+StudentController <<-- StudentService <<-- [StudentRepository] -->> StudentConfig
+// note - [StudentRepository] used(extends) JPARepository methods/ functions to perform at [StudentService] and [StudenConfig]

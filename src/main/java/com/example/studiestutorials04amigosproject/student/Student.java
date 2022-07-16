@@ -1,10 +1,8 @@
 package com.example.studiestutorials04amigosproject.student;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.time.LocalDate;
+import java.time.Period;
 
 @Entity
 @Table
@@ -16,12 +14,12 @@ public class Student {
     private String name;
     private String email;
     private LocalDate dob;
-    private int age;
+    private Integer age;
 
     public Student() {
     }
 
-    public Student(long id, String name, String email, LocalDate dob, int age) {
+    public Student(long id, String name, String email, LocalDate dob, Integer age) {
         this.id = id;
         this.name = name;
         this.email = email;
@@ -29,7 +27,7 @@ public class Student {
         this.age = age;
     }
 
-    public Student(String name, String email, LocalDate dob, int age) {
+    public Student(String name, String email, LocalDate dob, Integer age){
         this.name = name;
         this.email = email;
         this.dob = dob;
