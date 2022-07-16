@@ -1,14 +1,16 @@
 # 017---Project-Spring-Amigo
 
-Studies related Spring Boot Project.
+Studies related Spring Boot Project. Used Spring Boot, MySQL, Hibernate, Spring-JPA.
 
 .
 .
 .
 .
+
 .
+
 .
-.
+
 .
 .
 .
@@ -22,10 +24,10 @@ model -> api(controller) -> Service -> Repository(database)
 
 1. Model
 2. Database Connection
-3. Controller(API)
-4. Service
-5. Repository(Interface)
-6. Configuration
+3. Controller(create API)
+4. Service(code for get, post, update and delete)
+5. Repository(Interface/ provide JpaRepository for database related functions)
+~~6. Configuration (no need of this one)~~
 
-StudentController <<-- StudentService <<-- [StudentRepository] -->> StudentConfig
+StudentController <<-- StudentService <<-- [StudentRepository] -->> ~~StudentConfig~~
 // note - [StudentRepository] used(extends) JPARepository methods/ functions to perform at [StudentService] and [StudenConfig]
